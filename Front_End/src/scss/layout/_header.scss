@@ -1,0 +1,120 @@
+.header {
+  width: $grid-width;
+  height: $gutter-vertical;
+  display: flex;
+  justify-content: center;
+
+  background-color: $color-primary;
+  background-image: linear-gradient($color-primary-light, $color-primary 50%);
+  border-bottom: 1px solid $color-primary-dark;
+  min-height: 42px;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  width: 980px;
+  height: 78px;
+
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  color: $color-white;
+  width: 170px;
+  height: 55px;
+  margin-top: 17px;
+  position: relative;
+
+  &:hover{
+    letter-spacing: 2.2px;
+    cursor: pointer;
+ 
+
+    &::after {
+      transform: scaleX(1.6) scaleY(1.6);
+      opacity: 0;
+      background-color: $color-white;
+    }
+  }
+
+
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+}
+
+.box-input {
+    display: flex;
+    width: 392px;
+    height: 65px;
+  
+    font-size: 10px;
+    color: $color-black;
+    align-items: center;
+    margin-top: 7px;
+  
+    &_Login {
+      height: 23px;
+      width: 150px;
+      border: solid 2px $color-black;
+      margin-left: 14px;
+    }
+  
+    
+  }
+  
+  .box-inputLabelTop {
+    font-family: "Red Rose", cursive;
+    font-weight: 400;
+    position: absolute;
+    height: 15px;
+    width: 270px;
+    top: 10px;
+    right: 140px;
+    display: flex;
+    justify-content: space-around;
+  
+    &_label {
+      color: $color-white;
+      font-size: 12px;
+    }
+  }
+  
+  .box-inputLabelBottom {
+    position: absolute;
+    height: 18px;
+    width: 124px;
+    top: 52px;
+    right: 81px;
+    display: flex;
+    margin-top: 5px;
+  
+    &_label {
+      font-family: "Red Rose", cursive;
+      font-weight: 400;
+      color: #9cb4d8;
+      font-size: 12px;
+
+
+      &:hover {
+          color: $color-white;
+      }
+    }
+    
+   }

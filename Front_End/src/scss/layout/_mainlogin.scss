@@ -1,0 +1,8 @@
+.mainLogin{
+    width: $grid-width;
+    height:$gutter-vertical-primary;
+    display: flex;
+    justify-content: center;
+
+    background: linear-gradient($color-white, $color-blue-1 );
+}
