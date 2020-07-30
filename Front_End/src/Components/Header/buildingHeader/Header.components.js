@@ -26,3 +26,4 @@ export const BoxInput = function Div(props) {
 export const Nav = function Nav(props) {
   return <nav className="navbar">{props.children}</nav>;
 };
+

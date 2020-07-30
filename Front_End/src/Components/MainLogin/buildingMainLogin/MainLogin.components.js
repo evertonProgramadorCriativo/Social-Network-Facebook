@@ -27,3 +27,7 @@ export const Nav = function Nav(props) {
   {props.children}
   </nav>);
 };
+
+export const H2 = function H2 (props) {
+  return (<h2 className={props.class}>{props.children}  {props.text}</h2>);
+};
