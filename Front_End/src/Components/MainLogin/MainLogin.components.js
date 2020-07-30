@@ -14,7 +14,7 @@ export default function MainLogin() {
             <p>lado 02 </p>
           </Div>
         </Div>
-      </Div>
+      </Div> 
     </Nav>
   );
 }

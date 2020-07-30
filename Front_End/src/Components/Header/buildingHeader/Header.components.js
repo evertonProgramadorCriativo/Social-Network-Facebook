@@ -17,7 +17,7 @@ export const Div = function Div(props) {
       {props.children}
     </div>
   );
-};
+};  
 
 export const BoxInput = function Div(props) {
   return <div className="box-input">{props.children}</div>;

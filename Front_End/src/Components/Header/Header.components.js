@@ -4,7 +4,7 @@ import { Nav, Div, BoxInput, Inputs } from "./buildingHeader/Header.components";
 
 export default function Header() {
   return ( 
-    <header className="header">
+    <header className="header"> 
       <Nav class="navbar">    
         <Div class="logo" text="facebook" />
 
