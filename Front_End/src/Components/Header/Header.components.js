@@ -1,32 +1,32 @@
 import React from "react";
 import "../../scss/pages/login.scss"; 
-import { Nav, Div, DivTeste, Inputs } from "./buildingHeader/Header.components";
+import { Nav, Div, BoxInput, Inputs } from "./buildingHeader/Header.components";
 
 export default function Header() {
   return ( 
     <header className="header">
       <Nav class="navbar">    
-        <DivTeste class="logo" text="facebook" />
+        <Div class="logo" text="facebook" />
 
-        <DivTeste class="box-inputLabelTop">
-          <DivTeste class="box-inputLabelTop_label" text="Email ou Telefone" />
+        <Div class="box-inputLabelTop">
+          <Div class="box-inputLabelTop_label" text="Email ou Telefone" />
 
-          <DivTeste class="box-inputLabelTop_label" text="Senha" />
-        </DivTeste>
-        <Div class="box-input">
+          <Div class="box-inputLabelTop_label" text="Senha" />
+        </Div>
+        <BoxInput>
           <Inputs textPlace="Digite seu login..." type="text" class="box-input_Login" />
 
           <Inputs textPlace="Digite sua Senha..." type="password" class="box-input_Login" />
 
-          <DivTeste class="button button--blue button--small" text="Entrar" />
-        </Div>
+          <Div class="button button--blue button--small" text="Entrar" />
+        </BoxInput>
 
-        <DivTeste class="box-inputLabelBottom">
-          <DivTeste
+        <Div class="box-inputLabelBottom">
+          <Div
             class="box-inputLabelBottom_label"
             text="Esqueceu a conta?"
           />
-        </DivTeste>
+        </Div>
       </Nav>
     </header>
   );

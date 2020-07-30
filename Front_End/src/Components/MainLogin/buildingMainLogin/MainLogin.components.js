@@ -19,10 +19,11 @@ export const Div = function Div(props) {
   );
 };
 
-export const BoxInput = function Div(props) {
-  return <div className="box-input">{props.children}</div>;
-};
+ 
 
 export const Nav = function Nav(props) {
-  return <nav className="navbar">{props.children}</nav>;
+  return (
+  <nav className={props.class}>
+  {props.children}
+  </nav>);
 };

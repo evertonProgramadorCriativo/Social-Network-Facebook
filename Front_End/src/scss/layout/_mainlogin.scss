@@ -1,8 +1,18 @@
 .mainLogin{
     width: $grid-width;
-    height:$gutter-vertical-primary;
+    height: $gutter-vertical-primary;
     display: flex;
     justify-content: center;
-
+ position: relative;
     background: linear-gradient($color-white, $color-blue-1 );
+}
+
+.boxMain{
+ 
+    height: 63.05rem;
+    width: 98.5rem;
+    position: absolute;
+    background-color: blue;
+    
+
 }
